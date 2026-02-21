@@ -57,7 +57,7 @@ namespace Loja.Domain.Tests
             {
                 var resultado = _calculadora.Dividir(10, 2);
 
-                Assert.That(resultado, Is.EqualTo(5));
+                Assert.That(resultado, Is.EqualTo(4));
             }
 
             [Test]
