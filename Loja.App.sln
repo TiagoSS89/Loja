@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Tests", "02-Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Tests", "03-Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Domain", "01 - Domain", "{428F4782-C283-45E8-BED9-726A9047AA3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Domain", "src\Loja.Domain\Loja.Domain.csproj", "{B63A665E-3670-4988-BDF2-AEA689DA171F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Domain.Tests", "Tests\Loja.Domain.Tests\Loja.Domain.Tests.csproj", "{677082EA-49D3-49AF-A828-2821C539F143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02- App", "02- App", "{5044D77B-AAEF-4716-9D79-A7774B545E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.App", "src\Loja.App\Loja.App.csproj", "{733B53A0-24E0-4772-8367-BEE79E1BEE7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{677082EA-49D3-49AF-A828-2821C539F143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{677082EA-49D3-49AF-A828-2821C539F143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{677082EA-49D3-49AF-A828-2821C539F143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733B53A0-24E0-4772-8367-BEE79E1BEE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733B53A0-24E0-4772-8367-BEE79E1BEE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733B53A0-24E0-4772-8367-BEE79E1BEE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733B53A0-24E0-4772-8367-BEE79E1BEE7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B63A665E-3670-4988-BDF2-AEA689DA171F} = {428F4782-C283-45E8-BED9-726A9047AA3E}
 		{677082EA-49D3-49AF-A828-2821C539F143} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{733B53A0-24E0-4772-8367-BEE79E1BEE7D} = {5044D77B-AAEF-4716-9D79-A7774B545E71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE21336F-6AEC-4FA3-BE36-8EAC5006BCF5}
