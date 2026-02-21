@@ -1,0 +1,28 @@
+name: CI - Build & Test
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x   # ou 8.0.x se estiver usando LTS
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Testes
+        run: dotnet test --no-restore --verbosity normal
+
+      - name: Testes com cobertura
+        run: dotnet test --collect:"XPlat Code Coverage" --no-restore
