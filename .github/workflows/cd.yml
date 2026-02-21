@@ -1,8 +1,10 @@
 name: CD - Deploy EC2
 
 on:
-  push:
-    branches: ["main"]
+  workflow_run:
+    workflows: ["Docker - Build & Push"]
+    types:
+      - completed
 
 jobs:
   deploy:
