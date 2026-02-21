@@ -1,9 +1,8 @@
-﻿using Loja.Domain;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace Domain.Tests
+namespace Loja.Domain.Tests
 {
-   
+  
         [TestFixture]
         public class CalculadoraTests
         {
