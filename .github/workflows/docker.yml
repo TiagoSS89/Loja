@@ -25,3 +25,4 @@ jobs:
           file: ./src/Loja.App/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/loja-app:latest
+          
