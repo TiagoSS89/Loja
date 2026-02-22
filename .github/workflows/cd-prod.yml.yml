@@ -26,6 +26,7 @@ jobs:
 
   deploy-prod:
     needs: deploy-dev
+    if: ${{ needs.deploy-dev.result == 'success' }}
     runs-on: ubuntu-latest
     environment: production
 
