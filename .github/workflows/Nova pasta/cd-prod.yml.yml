@@ -13,21 +13,12 @@ jobs:
 
     steps:
       - name: Deploy DEV
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.EC2_DEV_HOST }}
-          username: ${{ secrets.EC2_DEV_USER }}
-          key: ${{ secrets.EC2_DEV_SSH_KEY }}
-          script: |
-            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/loja-app:latest
-            sudo docker stop loja-dev || true
-            sudo docker rm loja-dev || true
-            sudo docker run -d -p 5000:8080 --name loja-dev ${{ secrets.DOCKERHUB_USERNAME }}/loja-app:latest
+        run: echo "Deploy dev automático aqui"
 
   deploy-prod:
     needs: deploy-dev
     runs-on: ubuntu-latest
-    environment: production
+    environment: production  # 🔥 AQUI está o gate
 
     steps:
       - name: Deploy PROD
